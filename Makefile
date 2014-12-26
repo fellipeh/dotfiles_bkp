@@ -25,17 +25,4 @@ install-bash:
 
 install-git:
 	rm -f ~/.gitconfig
-
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
