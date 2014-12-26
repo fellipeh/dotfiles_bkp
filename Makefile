@@ -9,7 +9,7 @@ ifeq ($(OS),Linux)
 	SUDO = 'sudo'
 endif
 
-install: install-vim install-bash install-git
+install: install-vim install-bash
 
 install-vim:
 	rm -rf ~/.vim ~/.vimrc
