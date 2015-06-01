@@ -9,7 +9,7 @@ ifeq ($(OS),Linux)
 	SUDO = 'sudo'
 endif
 
-install: install-vim install-bash
+install: install-vim install-bash install-tmux
 
 install-vim:
 	rm -rf ~/.vim ~/.vimrc
@@ -19,9 +19,14 @@ install-vim:
 
 install-bash:
 	rm -f ~/.bashrc
-	ln -s `pwd`/bash/bashrc ~/.bashrc
-	@for i in $(BASH_COMPLETIONS); do if [ -f $(BASH_COMPLETION_D)/$$(basename $$i) ]; then $(SUDO) rm $(BASH_COMPLETION_D)/$$(basename $$i); fi done
-	@for i in $(BASH_COMPLETIONS); do $(SUDO) ln -s $$i $(BASH_COMPLETION_D); done
+	rm -f ~/.profile
+	ln -s `pwd`/bash/bashrc ~/.profile
+#	@for i in $(BASH_COMPLETIONS); do if [ -f $(BASH_COMPLETION_D)/$$(basename $$i) ]; then $(SUDO) rm $(BASH_COMPLETION_D)/$$(basename $$i); fi done
+#	@for i in $(BASH_COMPLETIONS); do $(SUDO) ln -s $$i $(BASH_COMPLETION_D); done
+
+install-tmux:
+	rm -f ~/.tmux.conf
+	ln -s `pwd`/tmux/tmux.conf ~/.tmux.conf
 
 install-git:
 	rm -f ~/.gitconfig

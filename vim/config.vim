@@ -43,7 +43,7 @@ set scrolloff=3
 "*****************************************************************************
 syntax on
 set bg=dark
-colorscheme gruvbox
+colorscheme solarized
 set ruler
 set number
 
@@ -57,7 +57,7 @@ set gfn=Monospace\ 8
 if has("gui_running")
   if has("gui_mac") || has("gui_macvim")
     set guifont=Menlo:h12
-    set transparency=7
+   " set transparency=7
   endif
 else
   let g:CSApprox_loaded = 1

@@ -11,6 +11,10 @@ dotfiles
 - ctags
 - flake8 (optional)
 
+(only for python developers)
+- VirtualEnv
+- VirtualEnv Wrapper
+
 
 # Installation:
 ```bash

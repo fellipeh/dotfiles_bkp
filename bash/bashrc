@@ -6,13 +6,13 @@
 #   ------------------------------------------------------------
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
+#export LSCOLORS=ExFxBxDxCxegedabagacad
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
 
-export EDITOR=/usr/bin/nano
- 
+export EDITOR=/usr/bin/vim
+
 #   Set default blocksize for ls, df, du
 #   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
 #   ------------------------------------------------------------
@@ -24,6 +24,8 @@ export BLOCKSIZE=1k
 #   ------------------------------------------------------------
 
 alias ls="ls -G"
+alias devdjango="cd ~/Developer/django"
+alias dev="cd ~/Developer"
 
 #   Set Paths
 #   ------------------------------------------------------------
@@ -34,7 +36,16 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 #   ------------------------------------------------------------
 
 export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Developer
 source /usr/local/bin/virtualenvwrapper.sh
+
+#   Set VirtualEnv variables
+#   ------------------------------------------------------------
+
+# pip should only run if there is a virtualenv  currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+# cache pip-installed packages toa void re-downloading
+#export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
 #   Set Locale
 #   ------------------------------------------------------------ 
@@ -84,4 +95,10 @@ alias numFiles='echo $(ls -1 | wc -l)'      # numFiles:     Count of non-hidden 
          fi
     }
  
- 
+
+#   Settings Ruby
+#   -------------------------------------------------------------
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+source /Users/fellipeh/.iterm2_shell_integration.bash

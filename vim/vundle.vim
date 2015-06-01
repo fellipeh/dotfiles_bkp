@@ -21,8 +21,13 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
+
 " Color
 Plugin 'morhetz/gruvbox'
+
+" Solarized Color
+Plugin 'altercation/vim-colors-solarized'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
