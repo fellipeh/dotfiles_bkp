@@ -43,13 +43,13 @@ set scrolloff=3
 "*****************************************************************************
 syntax on
 set bg=dark
-colorscheme solarized
+colorscheme  solarized
 set ruler
 set number
 
 let no_buffers_menu=1
 set mousemodel=popup
-set mouse=a
+set mouse=r
 set t_Co=256
 set guioptions=egmrt
 set gfn=Monospace\ 8

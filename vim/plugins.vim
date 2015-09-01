@@ -11,7 +11,8 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 " airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 0
-let g:airline_detect_whitespace= 1
+"let g:airline_detect_whitespace= 1
+let g:airline#extensions#whitespace#enabled = 1
 let g:airline_section_z = airline#section#create_right(['%3l:%2c'])
 let g:airline#extensions#hunks#non_zero_only = 1
 let g:airline#extensions#ctrlp#color_template = 'replace'
@@ -54,3 +55,8 @@ noremap <leader>b :CtrlPBuffer<CR>
 nmap <C-p> :CtrlP<CR>
 let g:ctrlp_map = ',e'
 let g:ctrlp_open_new_file = 'r'
+
+" gitgutter
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
+"let g:gitgutter_max_signs = 2

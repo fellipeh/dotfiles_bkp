@@ -21,12 +21,14 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'tmhedberg/matchit'
 
-" Color
+" Colors
 Plugin 'morhetz/gruvbox'
-
-" Solarized Color
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'jonathanfilip/vim-lucius'
+Plugin 'nanotech/jellybeans.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
