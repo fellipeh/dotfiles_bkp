@@ -99,6 +99,6 @@ alias numFiles='echo $(ls -1 | wc -l)'      # numFiles:     Count of non-hidden 
 #   Settings Ruby
 #   -------------------------------------------------------------
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-source /Users/fellipeh/.iterm2_shell_integration.bash
+#source /Users/fellipeh/.iterm2_shell_integration.bash
