@@ -43,7 +43,7 @@ set scrolloff=3
 "*****************************************************************************
 syntax on
 set bg=dark
-colorscheme  solarized
+colorscheme gruvbox
 set ruler
 set number
 
