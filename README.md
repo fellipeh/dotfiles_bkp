@@ -20,5 +20,6 @@ dotfiles
 ```bash
 $ cd ~
 $ git clone --recursive https://github.com/fellipeh/dotfiles.git
+# cd dotfiles
 $ make install
 ```
